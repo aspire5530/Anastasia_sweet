@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有商品｜Anastasia甜品．你一天的甜</title>
+    <link rel="stylesheet" href="favicon.ico">
+    <link rel="stylesheet" href="./bootstrape/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrape/font/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/products.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header fixed-top">
+      <div class="section container">
+        <!---行動版選單開關 -->
+        <a class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi-list"></i></a>
+        <!-- logo -->
+        <!-- <div class="logo"> -->
+          <a class="logobtn" href="./index.html"><div class="logo"></div></a>
+        <!-- </div> -->
+        <!-- nav: 按鈕四顆 -->
+        <nav class="top-nav">
+          <ul>
+            <li><a class="main-nav" href="./index.html">首頁</a></li>
+            <li><a class="main-nav active" href="#">商品</a></li>
+            <li><a class="main-nav" href="./branch.html">分店</a></li>            
+          </ul>
+        </nav>        
+        <!-- 購物車 -->
+        <div class="cart">
+          <a href="./cart.html">
+            <i class="bi-cart4"></i>
+            <div class="num">0</div>
+          </a>
+        </div>
+        <!--會員 -->
+        <div class="member">
+          <a href="./login.html">
+            <i class="bi-person-fill"></i>            
+          </a>
+        </div>        
+        <!-- 搜尋列 -->
+        <div class="search">
+          <input type="text" class="searchbar" placeholder="快搜搜您喜歡的東西">
+          <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+        </div>
+        <a href="#"></a>
+
+        
+      </div>
+    </div>  
+      
+    <!-- 行動版選單 -->
+    <div class="s-list">
+        <!-- 按鈕 -->       
+        <!-- 選單 -->      
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <!-- 搜尋列 -->
+            <div class="m-search">
+              <input type="text" id="m-searchbar" placeholder="快搜搜吧！">
+              <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+            </div>
+            <a href="#"></a>
+            <a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>          
+          </div>              
+          <div class="offcanvas-body">
+            <nav>
+              <ul>
+                <li><a href="./index.html">首頁</a></li>
+                <li><a class="active" href="#">商品</a></li>
+                <li><a href="./branch.html">分店</a></li>           
+              </ul>
+            </nav>          
+          </div>
+        </div>
+      </div> 
+
+    <!-- 輪播圖 -->
+    <div class="bn">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- <img src="./images/banner/banner_prod1.jpg" alt=""> -->
+                <h3>法國可可布朗尼</h3>
+                <a href="./cart.html"><p>立即購買</p></a>           
+              </div>
+              <div class="carousel-item">
+                <h3>藍莓可可派</h3>
+                <a href="./cart.html"><p>立即購買</p></a>                  
+              </div>
+              <div class="carousel-item">       
+                <h3>肉桂生乳酪蛋糕</h3>
+                <a href="./cart.html"><p>立即購買</p></a>           
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>    
+
+    <!-- 精選商品 -->
+    <div class="project container">
+        <div class="title">
+            <h2>精選商品</h2>            
+        </div>        
+        <div class="content">
+            <div class="row">
+                <div class="select col-lg-3 col-md-6">
+                    <a class="goods-box" href="#">
+                      <div class="pic">                        
+                      </div>
+                      <div class="text">
+                          <h6>香草派對</h6>
+                          <p>$350</p>
+                      </div>
+                      <div class="cover">
+                          <h4>主廚<br>推薦</h4>                            
+                      </div>
+                    </a>
+                </div>
+                <div class="select col-lg-3 col-md-6">
+                    <a class="goods-box" href="#">
+                      <div class="pic"></div>
+                      <div class="text">
+                          <h6>夢幻玫瑰</h6>
+                          <p>$1500</p>
+                      </div>
+                      <div class="cover">
+                          <h4>法國<br>原料</h4>                        
+                      </div>
+                    </a>
+                </div>
+                <div class="select col-lg-3 col-md-6">
+                    <a class="goods-box" href="#">
+                      <div class="pic"></div>
+                      <div class="text">
+                          <h6>松露巧克力</h6>
+                          <p>$220</p>
+                      </div>
+                      <div class="cover">
+                          <h4>本月<br>新品</h4>                        
+                      </div>
+                    </a>
+                </div>
+                <div class="select col-lg-3 col-md-6">
+                    <a class="goods-box" href="#">
+                      <div class="pic"></div>
+                      <div class="text">
+                          <h6>櫻桃甜心</h6>
+                          <p>$180</p>
+                      </div>
+                      <div class="cover">
+                          <h4>獨家<br>研發</h4>                        
+                      </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+    <!-- 商品列表 -->
+    <div class="all-products">
+        <div class="project container">
+            <div class="title">
+                <h2>美味甜點</h2>            
+            </div>        
+             <!-- 價格篩選 -->
+            <div class="filter container">
+                <p class="pricetag">依價格篩選：</p>
+                <a class="price" href="javascript:;">全部</a>
+                <a class="price" data-index="1" href="javascript:;">200元↓</a>
+                <a class="price" data-index="2" href="javascript:;">200-800元</a>
+                <a class="price" data-index="3" href="javascript:;">800元↑</a>            
+            </div>
+            <!-- 商品渲染 -->
+            <div class="content">
+                <div class="row goodlist">                                       
+                </div>
+            </div>     
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container foot">
+          <div class="row">
+            <div class="logo_foot col-lg-3 col-md-6">
+              <a href="#">
+                <img src="./images/logo.png" alt="">            
+                <a class="code" href="#">
+                  <img src="./images/CODE_A.png" alt="">
+                  <img src="./images/CODE_G.png" alt="">
+                  <h6 class="download">下載APP</h6>
+                </a>
+              </a>
+            </div>
+            <div class="info col-lg-3 col-md-6">
+              <dl>
+                <dt><a href="#">關於我們</a></dt>
+                <dd><a href="#">台南市成功區太平路123號</a></dd>
+                <dd><a href="#">06-123-4567</a></dd>
+                <dd><a href="#">CRM@aymail.com</a></dd>
+            </dl>
+            </div>
+            <div class="info col-lg-3 col-md-6">
+              <dl>
+                <dt><a href="#">投資人專區</a></dt>
+                <dd><a href="#">財務資訊</a></dd>
+                <dd><a href="#">股東專欄</a></dd>
+                <dd><a href="#">股東大會</a></dd>               
+              </dl>        
+            </div>     
+            <div class="info col-lg-3 col-md-6">
+              <dl>
+                <dt><a href="#">企業永續</a></dt>
+                <dd><a href="#">社會關懷</a></dd>
+                <dd><a href="#">永續經營</a></dd>            
+                <dd><a href="#">報告書</a></dd>
+                <dd><a href="#">員工慈善活動</a></dd>            
+              </dl>
+            </div>        
+          </div>       
+          
+        </div>
+      </footer>
+
+    <script src="./bootstrape/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="./js/products.js"></script>
+    <script>
+        
+        
+    </script>
+</body>
+</html>

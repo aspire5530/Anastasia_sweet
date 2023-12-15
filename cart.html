@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車｜Anastasia甜品．你一天的甜</title>
+    <link rel="stylesheet" href="favicon.ico">
+    <link rel="stylesheet" href="./bootstrape/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrape/font/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+</head>
+<body>
+    <section class="all">
+        <!-- header -->       
+    <div class="header fixed-top">
+        <div class="section container">
+          <!---行動版選單開關 -->
+          <a class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi-list"></i></a>
+          <!-- logo -->
+          <a class="logobtn" href="./index.html"><div class="logo"></div></a>
+          <!-- nav: 按鈕四顆 -->
+          <nav class="top-nav">
+            <ul>
+              <li><a class="main-nav" href="./index.html">首頁</a></li>
+              <li><a class="main-nav" href="./products.html">商品</a></li>
+              <li><a class="main-nav" href="./branch.html">分店</a></li>            
+            </ul>
+          </nav>        
+          <!-- 購物車 -->
+          <div class="cart">
+            <a href="#">
+              <i class="bi-cart4"></i>
+              <div class="num">{{totalChecked}}</div>
+            </a>
+          </div>
+          <!--會員 -->
+          <div class="member">
+            <a href="./login.html">
+              <i class="bi-person-fill"></i>            
+            </a>
+          </div>        
+          <!-- 搜尋列 -->
+          <div class="search">
+            <input type="text" class="searchbar" placeholder="快搜搜您喜歡的東西">
+            <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+          </div>
+          <a href="#"></a>
+  
+          
+        </div>
+      </div>        
+    <!-- 行動版選單 -->
+    <div class="s-list">
+        <!-- 按鈕 -->       
+        <!-- 選單 -->      
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <!-- 搜尋列 -->
+            <div class="m-search">
+              <input type="text" id="m-searchbar" placeholder="快搜搜吧！">
+              <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+            </div>
+            <a href="#"></a>
+            <a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>          
+          </div>              
+          <div class="offcanvas-body">
+            <nav>
+              <ul>
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="./products.html">商品</a></li>
+                <li><a href="./branch.html">分店</a></li>           
+              </ul>
+            </nav>          
+          </div>
+        </div>
+      </div> 
+
+    <!-- 購物車 -->
+    <div class="shop">        
+        <!-- 頭部 -->
+        <div class="top container"></div>
+        <h3>甜點購物車</h3>
+        <!-- 商品列表 -->
+        <div class="shop-list">
+            <table class="shop-content">
+                <thead>
+                    <tr>
+                        <th><input v-model="isAll" type="checkbox"></th>                
+                        <th></th>
+                        <th>商品</th>                        
+                        <th>單價</th>
+                        <th>數量</th>
+                        <th class="sub-ttl-tag">小計</th>
+                        <th></th>
+                    </tr>                    
+                </thead>
+                <tbody class="main" v-if="prodList.length > 0">
+                    <tr v-for="(item, index) in prodList" :key="item.id" :class="{ active: item.isChecked }">
+                        <td><input class="choose" type="checkbox" v-model="item.isChecked"></td>
+                        <td class="pic"><img class="prod-pic" :src="item.pic" alt=""></td>
+                        <td>{{item.product}}</td>
+                        <td>{{item.price}}元</td>
+                        <td>
+                            <button :disabled="item.num <= 1" @click="sub(item.id)"><i class="bi-dash-square-fill"></i></button>
+                            <span>{{item.num}}</span>
+                            <i @click="add(item.id)" class="bi-plus-square-fill"></i>
+                        </td>
+                        <td class="sub-ttl">{{item.price * item.num}}元</td>
+                        <td><i @click='del(item.id)' class="bi-trash3"></i></td>
+                    </tr>
+                </tbody>
+                <!-- 空白購物車 -->
+                <tbody class="emptycart" v-else>
+                    <tr>
+                        <td class="empty" colspan="7">您的購物車是空的，趕快去挑選您喜歡的點心吧！<i class="bi-cart4"></i></td>
+                    </tr>
+                </tbody>              
+            </table>
+            <!-- 結算 -->
+            <table class="total fixed-bottom">
+                <thead>
+                    <tr>                            
+                        <td class="billtag">結帳金額<span class="ttl-price">{{ totalPrice }}元</span></td>                                                                           
+                        <td><a class="bill" @click="submit()" href="#">結帳({{ totalCount }})</a></td>                        
+                    </tr>
+                </thead>
+            </table>
+            
+        </div>
+
+    </div>
+
+    </section> 
+
+
+    <script src="./bootstrape/js/bootstrap.min.js"></script>    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script> -->
+    <script src="./js/cart.js"></script>    
+</body>
+</html>

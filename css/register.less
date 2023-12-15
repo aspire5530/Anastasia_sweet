@@ -1,0 +1,385 @@
+// out: ../css/
+* {
+    margin: 0 ;
+    padding: 0 ;
+    color: #333;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+.wrapper {
+    margin: 0 auto;            
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+@fontColor: #636060;
+@iconColor: rgba(82, 80, 80, 0.5);
+
+/* header */
+.header {    
+    height: 65px;
+    background-color:#fff;
+    .section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        //漢堡按鈕
+        .list-s {
+            // display: none;
+            height: 65px;
+            width: 65px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 2rem;
+            background-color: #fff;
+            border: 0;
+        }
+        .bi-list {            
+            color: @fontColor;            
+        }
+        //logo
+        .logo {
+            height: 65px;
+            width: 220px;
+            background-image: url(../images/logo.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        //行動版隱藏區
+
+        //navigator
+        nav {
+            padding-top: 20px;
+            // margin-right: 70px;
+            ul {
+                display: flex;
+                li {
+                    .main-nav{
+                        // letter-spacing: 0.5em;
+                        display: block;
+                        margin: 0 15px;
+                        font-size: 18px;
+                        text-decoration: none;
+                        color: @fontColor;     
+                        transition: all 0.15s;  
+                        text-align: center;
+                        &:hover{
+                            color: #000;
+                            font-size: 19px;
+                            font-weight: 500;
+                            text-shadow: 2px 2px 5px rgba(188, 188, 188, 0.5);
+                            border-bottom: 2px solid plum;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        //搜尋列
+        .search{
+            padding-top: 17px;
+            width: 300px;
+            height: 35px;
+            .searchbar {
+                padding-left: 9px;
+                border-radius: 20px;
+                border: 0;
+                background-color: #ececec;
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
+            .searchbtn {
+                .bi-search-heart-fill{
+                    color: @iconColor;
+                }
+                
+            }
+        }
+
+
+        //顯示按鈕: 會員+購物車
+        .topbtn {
+            padding-top: 7px;
+            display: flex;
+            width: 100px;
+            // 會員
+            .member {   
+                padding-top: 5px;                 
+                .bi-person-fill {                
+                    color: @fontColor;
+                    font-size: 29px;
+                }
+            }
+            // 購物車
+            .cart {                
+                position: relative;
+                padding: 6px 0px 0px 15px;
+                .bi-cart4 {
+                    color: @fontColor;
+                    font-size: 1.2rem;
+                }
+                .num {
+                    position: absolute;
+                    left: 33px;
+                    top: 5px;
+                    width: 16px;
+                    height: 16px;
+                    background-color: rgb(255, 102, 0);
+                    border-radius: 10px;
+                    font-size: 5px;
+                    font-weight: 700;
+                    color: #ececec;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }            
+        }
+        
+        
+    }
+}
+
+@media (max-width: 992px) {
+    nav,
+    .search {
+        display: none;
+    }        
+    
+}
+
+@media (min-width: 992px) {
+    .bi-list {
+        display: none;
+    }
+}
+
+// 漢堡選單
+.offcanvas {
+    .search{
+        // padding-top: 10px;
+        margin-right: 20px;
+        width:300px;
+        height: 45px;
+        .searchbar {
+            padding-left: 15px;
+            border-radius: 40px;
+            border: 0;
+            width: 250px;
+            height: 45px;
+            background-color: #ececec;
+            &::placeholder {
+                font-size: 20px;
+            }
+        }
+        .searchbtn {
+            .bi-search-heart-fill{
+                font-size: 30px;
+                color: @iconColor;
+            }            
+        }
+    }
+    .offcanvas-body {
+        li {
+            margin-right: 50px;
+            border-bottom: 1px solid plum;
+            a{
+                color: @fontColor;
+                text-decoration: none;            
+                line-height: 55px;
+            }
+        }
+        
+    }
+    
+
+
+}
+
+body {
+    background-image: url(../images/bg_register.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;    
+}
+// 註冊
+.register {
+    background-color: #ffffff7e;
+    margin-top: 65px;
+    padding: 50px 6%;
+    .row {
+        margin: 8px 0;
+        h3 {
+            margin: 8px auto;
+            font-weight: 700;
+            text-align: center;
+        } 
+        h4 {
+            margin: 15px auto;
+            text-align: center;
+        }
+        h5 {
+            margin-bottom: 0;
+            line-height: 40px;
+        }
+        p {
+            font-size: 12px;
+            color: rgb(83, 2, 2);
+        }
+        input {
+            margin: 0 0;
+            height: 40px;
+            border: 0;
+            background-color: #f5e4e4;
+            border-radius: 20px;
+            padding-left: 10px;
+            &::placeholder {
+                line-height: 50px;
+                font-size: 12px;                
+            }
+        }       
+        
+        // 生日
+        select {
+            margin: 5px auto;
+            height: 40px;
+            width: 100 px;
+            border: 0;
+            background-color: #f5e4e4;
+            border-radius: 20px;
+            padding-left: 10px;
+        }
+
+        // 驗證碼
+        .msg {
+            .sent {
+                line-height: 40px;
+                margin-left: 2%;                
+                color: #ffffff;
+                width: 160px;
+                background-color: #5a2c55;
+                border-radius: 20px;
+                text-decoration: none;
+                text-align: center;
+                font-size: 18px;
+            }            
+        }
+        
+
+
+        // 同意書
+        .agree {
+            margin: 3% auto; 
+            .agreement {
+                display: block;
+                padding: 5px;
+                height: 150px;
+                margin: 0 auto;
+                font-size: 18px;
+                overflow: auto;
+                background-color: #fff0f0a4;
+                border-radius: 10px;
+            }
+            .check {
+                // display: block;
+                margin: 0 auto;
+                .checkbox {
+                    width: 18px;
+                    height: 18px;
+                }
+                span {
+                    display: inline-block;
+                    color: #888888;
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+            
+        }
+        
+        // 送出按鈕
+        .regis-btn {
+            display: block;
+            width: 150px;
+            height: 50px;
+            margin: 2px auto;
+            background-color: #f5e4e4;
+            border: 1px solid rgb(125, 30, 82);
+            text-align: center;
+            font-weight: 700;
+            border-radius: 30px;
+            color: #bb2e7c;
+            line-height: 50px;
+            font-size: large;
+            transition-property: box-shadow;
+            transition-duration: 0.2s;
+            &:hover {
+                box-shadow: 3px 3px 12px #fff3f3;
+            }
+        }
+        
+    }
+}
+
+
+// footer
+.foot {       
+    margin: 0 auto;        
+    padding: 15px 15px 0 15px;
+    background: rgb(212, 194, 155);
+    text-align: center;
+    .row {        
+        justify-content: space-between;        
+        
+        .logo_foot {
+            padding: 0;
+            margin-bottom: 5px;
+            height: 220px;
+            text-align: center;
+            img {                               
+                max-width: 180px;
+                border-radius: 15px;               
+            }
+            .code {
+                display: block;
+                margin: 2px auto;
+                width: 230px;
+                img {
+                    max-width: 72px;
+                }
+            }
+            h6 {                
+                margin: 15px auto;
+                padding: 5px;
+                width: 100px;
+                border-radius: 25px;
+                font-size: 12px;
+                text-align: center;
+                color: #636060;
+                background-color: rgb(226, 213, 183);
+            }
+        }
+        .info {
+            padding: 12px 10px 5px 10px;
+            height: 180px;
+            dt {                
+                a {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+            dt,
+            dd {
+                padding-left: 35px;
+                margin-bottom: 2px;
+            }
+
+            a {
+                color:rgb(88, 83, 71);
+                font-size: 14px;
+            }
+        }
+    }
+}

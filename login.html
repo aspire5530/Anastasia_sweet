@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入｜Anastasia甜品．你一天的甜</title>
+    <link rel="stylesheet" href="favicon.ico">
+    <link rel="stylesheet" href="./bootstrape/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrape/font/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <div class="all">
+         <!-- header -->       
+         <div class="header fixed-top">
+          <div class="section container">
+            <!---行動版選單開關 -->
+            <a class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi-list"></i></a>
+            <!-- logo -->
+            <a class="logobtn" href="./index.html"><div class="logo"></div></a>
+            <!-- nav: 按鈕四顆 -->
+            <nav class="top-nav">
+              <ul>
+                <li><a class="main-nav" href="./index.html">首頁</a></li>
+                <li><a class="main-nav" href="./products.html">商品</a></li>
+                <li><a class="main-nav" href="./branch.html">分店</a></li>            
+              </ul>
+            </nav>        
+            <!-- 購物車 -->
+            <div class="cart">
+              <a @click="logInReminder()" href="#">
+                <i class="bi-cart4"></i>
+                <div class="num">0</div>
+              </a>
+            </div>
+            <!--會員 -->
+            <div class="member">
+              <a href="./login.html">
+                <i class="bi-person-fill"></i>            
+              </a>
+            </div>        
+            <!-- 搜尋列 -->
+            <div class="search">
+              <input type="text" class="searchbar" placeholder="快搜搜您喜歡的東西">
+              <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+            </div>
+            <a href="#"></a>   
+            
+          </div>
+        </div>        
+      <!-- 行動版選單 -->
+      <div class="s-list">
+          <!-- 按鈕 -->       
+          <!-- 選單 -->      
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <!-- 搜尋列 -->
+              <div class="m-search">
+                <input type="text" id="m-searchbar" placeholder="快搜搜吧！">
+                <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+              </div>
+              <a href="#"></a>
+              <a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>          
+            </div>              
+            <div class="offcanvas-body">
+              <nav>
+                <ul>
+                  <li><a href="./index.html">首頁</a></li>
+                  <li><a href="./products.html">商品</a></li>
+                  <li><a href="./branch.html">分店</a></li>           
+                </ul>
+              </nav>          
+            </div>
+          </div>
+        </div> 
+
+  <!-- 登入 -->    
+    <section class="container">
+      <div class="row">
+        <div class="login">
+          <form @submit="login" action="./cart.html">
+            <h3>歡迎光臨</h3>
+            <h6>登入並盡情選購您最愛的蛋糕和甜點吧！</h6>
+            <input class="uname" v-model="username" @change="verifyUname" type="text" placeholder="請輸入您的帳號">
+            <label>
+              <input class="remember" type="checkbox"><p class="check" >記住我的帳號</p>
+            </label>            
+            <input class="psw" v-model="password" type="password" @change="verifyPwd" autocomplete placeholder="請輸入您的密碼">         
+            <a href="#" class="forget">忘記密碼</a>
+            <a href="#" @click="reset" class="forget">全部清空</a><br>
+            <button type="submit" class="btn">立即登入</button>                    
+            <a href="#" @click="test">獲取試用帳號與密碼</a>
+            <p class="line"></p>
+            <a href="./register.html" class="nbtn">註冊成為新會員<i class="bi-chevron-double-right"></i></a>   
+            
+          </form>
+        </div>
+      </div>
+      
+  </section>
+
+  </div>    
+
+    
+
+  <script src="./bootstrape/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+  <script src="./js/login.js"></script>
+   
+</body>
+</html>

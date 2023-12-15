@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊｜Anastasia甜品．你一天的甜</title>
+    <link rel="stylesheet" href="favicon.ico">
+    <link rel="stylesheet" href="./bootstrape/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrape/font/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+        <!-- header -->
+    <div class="header fixed-top">
+        <div class="section container">
+          <!---行動版選單開關 -->
+          <button class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi-list"></i></button>
+          <!-- <a class="list-s" href="#"><i class="bi-list"></i></a> -->
+          <!-- logo -->
+          <a class="logobtn" href="./index.html"><div class="logo"></div></a>
+          <!-- nav: 按鈕四顆 -->
+          <nav>
+            <ul>
+              <li><a class="main-nav" href="./index.html">首頁</a></li>
+              <li><a class="main-nav" href="./products.html">商品</a></li>
+              <li><a class="main-nav" href="#">分店</a></li>            
+            </ul>
+          </nav>
+          <!-- 搜尋列 -->
+          <div class="search">
+            <input type="text" class="searchbar" placeholder="快搜搜您喜歡的東西">
+            <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+          </div>
+          <a href="#"></a>
+          <div class="topbtn">
+            <!--會員 -->
+            <div class="member">
+              <a href="#">
+                <i class="bi-person-fill"></i>
+                <!-- <span>請登入</span> -->
+              </a>
+            </div>
+            <!-- 購物車 -->
+            <div class="cart">
+              <a href="#">
+                <i class="bi-cart4"></i>
+                <div class="num">0</div>
+              </a>
+            </div>
+        </div>
+        </div>
+    </div>  
+      
+    <!-- 行動版選單 -->
+    <div class="s-list">
+    <!-- 按鈕 -->
+    <!-- <button class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button> -->
+    <!-- 選單 -->
+    <!-- 搜尋列 -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5> -->
+                <div class="search">
+                <input type="text" class="searchbar" placeholder="請輸入關鍵字">
+                <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+                </div>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- 選項 -->
+            <div class="offcanvas-body">
+            <nav>
+                <ul>
+                <li><a href="./index.html">首頁</a></li>
+                <li><a class="active" href="#">商品</a></li>
+                <li><a href="#">分店</a></li>            
+                </ul>
+            </nav>          
+            </div>
+        </div>
+    </div>
+
+    <!-- 註冊 -->    
+    <section class="container">
+        <div class="register">
+            <form class="row" action="./cart.html">
+              <h3 class="title">會員註冊</h3>
+              <!-- 帳密資料 -->
+              <div class="account">
+                <h4>建立您的會員身分</h4>
+                <p>*為必填欄位</p>
+                <div class="account row">
+                  <h5 class="col-lg-3">帳號*</h5>
+                  <input class="account col-lg-9" name="account" type="text" placeholder="請設定6~15位帳號，僅能使用英文、數字或_、-">
+                  <p class="alert"></p>                  
+                </div>
+                <div class="pwd row">
+                  <h5 class="col-lg-3">密碼*</h5>
+                  <input class="pwdinput col-lg-9" name="pwd" type="password" placeholder="請輸入6~15位密碼，僅能使用英數字或_、-符號">
+                  <p class="alert"></p>
+                </div>
+                <div class="confirm row">
+                  <h5 class="col-lg-3">確認密碼*</h5>
+                  <input class="confirminput col-lg-9" name="confirm" type="password" placeholder="請再次輸入您的密碼">
+                  <p class="alert"></p>
+                </div>
+                <div class="phone row">
+                  <h5 class="col-lg-3">手機號碼*</h5>
+                  <input class="phoneinput col-lg-9" name="phone" type="text" placeholder="請輸入手機">              
+                  <p class="alert"></p>
+                </div>
+                <div class="msg row">
+                  <h5 class="col-lg-3">驗證碼*</h5>
+                  <input class="msginput col-lg-6" name="msg" type="text" >
+                  <a class="sent col-lg-3" href="javascript:;">發送驗證碼</a>
+                  <p class="alert"></p>
+                </div>
+              </div>
+              <!-- 身分資訊 -->
+              <div class="person">
+                <h4>請輸入個人資料</h4>
+                <div class="uname row">
+                  <h5 class="col-lg-3">姓名*</h5>
+                  <input class="unameinput col-lg-9" type="text" name="uname" placeholder="請輸入您的真實姓名">                
+                  <p class="alert"></p>
+                </div>
+                <div class="userbday row">
+                  <h5 class="col-lg-3">生日</h5>
+                  <div class="bdinfo col-lg-9 row">
+                    <div class="year col-lg-3 col-md-4 col-sm-4">
+                      <input type="date" id="start" name="trip-start" value="2018-07-22" min="1923-01-01" max="2023-1-1" />
+                      <!-- <h6>西元</h6> -->
+                      <!-- <select name="byear" class="birthyear">
+                        <option value="" disabled>西元年</option>
+                        <option value="1900">1900年</option>
+                        <option value="2023">2023年</option>
+                      </select>                   
+                    </div>                  
+                    <div class="month col-lg-3 col-md-4 col-sm-4"> -->                      
+                      <!-- <select name="bmonth" class="birthmonth">                    
+                        <option value="" disabled>月</option>
+                        <option value="1">1月</option>
+                        <option value="2">2月</option>
+                      </select> -->
+                      <!-- <p>月</p> -->
+                    <!-- </div>
+                    <div class="day col-lg-3 col-md-4 col-sm-4">
+                      <select name="bday" class="birthday">
+                        <option value="" disabled>日</option>
+                        <option value="1">1日</option>
+                        <option value="2">2日</option>
+                      </select> -->
+                      <!-- <p>日</p> -->
+                    </div>
+                  </div>              
+                  
+                </div>
+                
+                <div class="address row">
+                  <h5 class="col-lg-3">收件地址*</h5>
+                  <input class="addressinput col-lg-9" type="text" name="address" placeholder="請正確填寫以利收件">
+                  <p class="alert"></p>
+                </div>
+              </div>
+              <!-- 使用者同意書 -->
+              <div class="agree">
+                <p class="agreement col-lg-6 col-md-8 col-sm-10">
+                  <strong>使用者同意書</strong>
+                  <br>日期：2023.12.8
+                  
+                  <br>本使用者同意書（以下簡稱「本協議」）由 [您的公司或組織名稱]（以下簡稱「我們」或「本公司」）提供。
+                  
+                  <br>1. 接受條款
+                  
+                  <br>1.1 通過使用我們的服務、網站、應用程式或產品（以下統稱「服務」），您同意遵守本協議的所有條款和條件。
+                  
+                  <br>2. 使用權限
+                  
+                  <br>2.1 我們授予您有限的、非獨家的、不可轉讓的許可，以使用我們提供的服務。
+                  
+                  <br>2.2 您同意不將我們的服務用於任何非法或未經授權的用途。
+                  
+                  <br>3. 個人資料
+                  
+                  <br>3.1 在使用我們的服務時，您可能需要提供一些個人資料。我們將根據我們的隱私政策處理這些資料。
+                  
+                  <br>4. 責任和免責聲明
+                  
+                  <br>4.1 您理解並同意，使用我們的服務存在風險，我們對任何因使用服務而導致的損失或損害概不負責。
+                  
+                  <br>5. 服務變更與終止
+                  
+                  <br>5.1 我們保留在任何時候修改或中止服務的權利，恕不另行通知。
+                  
+                  <br>6. 未成年人的使用
+                  
+                  <br>6.1 若您是未成年人，您應在父母或監護人的監督下使用我們的服務。
+                  
+                  <br>7. 法律適用與管轄
+                  
+                  <br>7.1 本協議受[您所在地區/國家]法律的約束。
+                  
+                  <br>8. 協議修改
+                  
+                  <br>8.1 我們保留隨時修改本協議的權利，修改後的協議將在我們的網站上公布。繼續使用我們的服務將視為您接受修改後的協議。
+                  
+                  <br>9. 聯絡我們
+                  
+                  <br>9.1 如果您對本協議有任何疑問，請通過 [您的聯絡方式] 聯絡我們。
+                  
+                  <br>感謝您閱讀並接受本使用者同意書。如有任何問題或疑慮，請聯絡我們。
+                  
+                  <br>Anastasia Yang 甜品店 <br>
+                  台南市成功區太平路123號<br>
+                  CRM@aymail.com</p>
+                <div class="check col-lg-6 col-md-8 col-sm-10">                              
+                <label>
+                  <input class="checkbox" type="checkbox">  
+                  <span class="agreebtn">已閱讀並同意《使用者同意書》(10)</span>
+                </label>
+                </div>
+                
+              </div>
+              <!-- 送出按鈕 -->
+              <button class="submit regis-btn col-lg-12">立即註冊</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="foot">
+        <footer class="container">
+        <div class="row">
+            <div class="logo_foot col-lg-3 col-md-6">
+            <a href="#">
+                <img src="./images/logo.png" alt="">            
+                <a class="code" href="#">
+                <img src="./images/CODE_A.png" alt="">
+                <img src="./images/CODE_G.png" alt="">
+                <h6>下載APP</h6>
+                </a>
+            </a>
+            </div>
+            <div class="info col-lg-3 col-md-6">
+            <dl>
+                <dt><a href="#">關於我們</a></dt>
+                <dd><a href="#">台南市成功區太平路123號</a></dd>
+                <dd><a href="#">06-123-4567</a></dd>
+                <dd><a href="#">CRM@aymail.com</a></dd>
+            </dl>
+            </div>
+            <div class="info col-lg-3 col-md-6">
+            <dl>
+                <dt><a href="#">投資人專區</a></dt>
+                <dd><a href="#">財務資訊</a></dd>
+                <dd><a href="#">股東專欄</a></dd>
+                <dd><a href="#">股東大會</a></dd>               
+            </dl>        
+            </div>     
+            <div class="info col-lg-3 col-md-6">
+            <dl>
+                <dt><a href="#">企業永續</a></dt>
+                <dd><a href="#">社會關懷</a></dd>
+                <dd><a href="#">永續經營</a></dd>            
+                <dd><a href="#">報告書</a></dd>
+                <dd><a href="#">員工慈善活動</a></dd>            
+            </dl>
+            </div>        
+        </div>
+        </footer>
+    </footer>
+
+    <script src="./bootstrape/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="./js/register.js"></script>
+    <script>
+        
+        
+    </script>
+</body>
+</html>

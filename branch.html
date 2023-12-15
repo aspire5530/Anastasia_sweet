@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分店｜Anastasia甜品．你一天的甜</title>
+    <link rel="stylesheet" href="favicon.ico">
+    <link rel="stylesheet" href="./bootstrape/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrape/font/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/branch.css">
+</head>
+<body>
+        <!-- header -->
+        <div class="header fixed-top">
+            <div class="section container">
+              <!---行動版選單開關 -->
+              <a class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi-list"></i></a>
+              <!-- logo -->
+              <a class="logobtn" href="./index.html"><div class="logo"></div></a>
+              <!-- nav: 按鈕四顆 -->
+              <nav class="top-nav">
+                <ul>
+                  <li><a class="main-nav active" href="#">首頁</a></li>
+                  <li><a class="main-nav" href="./products.html">商品</a></li>
+                  <li><a class="main-nav" href="./branch.html">分店</a></li>            
+                </ul>
+              </nav>        
+              <!-- 購物車 -->
+              <div class="cart">
+                <a href="./cart.html">
+                  <i class="bi-cart4"></i>
+                  <div class="num">0</div>
+                </a>
+              </div>
+              <!--會員 -->
+              <div class="member">
+                <a href="./login.html">
+                  <i class="bi-person-fill"></i>
+                  <!-- <span>請登入</span> -->
+                </a>
+              </div>        
+              <!-- 搜尋列 -->
+              <div class="search">
+                <input type="text" class="searchbar" placeholder="快搜搜您喜歡的東西">
+                <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+              </div>
+              <a href="#"></a>
+      
+              
+            </div>
+          </div>  
+          
+          <!-- 行動版選單 -->
+          <div class="s-list">
+            <!-- 按鈕 -->
+           
+            <!-- 選單 -->      
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <!-- 搜尋列 -->
+                <div class="m-search">
+                  <input type="text" id="m-searchbar" placeholder="快搜搜吧！">
+                  <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+                </div>
+                <a href="#"></a>
+                <a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>          
+              </div>              
+              <div class="offcanvas-body">
+                <nav>
+                  <ul>
+                    <li><a class="active" href="#">首頁</a></li>
+                    <li><a href="./products.html">商品</a></li>
+                    <li><a href="./branch.html">分店</a></li>           
+                  </ul>
+                </nav>          
+              </div>
+            </div>
+          </div>        
+
+    <!-- bn -->
+    <div class="top-bn">
+        <div class="bn">
+            <div class="top container"></div>
+        </div>
+        <div class="mask"></div>
+        <div class="bn-title">
+            <h2>｜分店資訊｜</h2>   
+            <h1>BRANCH</h1>
+        </div>       
+    </div>
+    
+    <!-- 分店 --> 
+    <div class="branch container">   
+        <div class="row">            
+            <section>
+                <!-- <h4 class="region north">North</h4>          -->
+                <div class="store">                
+                    <h5>台北|微風南京店</h5>
+                    <ul>
+                        <li><i class="store-info-icon bi-clock"></i><span>9:00~21:30</span></li>
+                        <li><i class="store-info-icon bi-shop"></i><span>台北市松山區南京東路三段337號5F</span></li>
+                        <li><i class="store-info-icon bi-telephone"></i><span>02-1111-1111</span></li>
+                        <li><div class="line"></div></li>
+                        <li><i class="store-info-icon bi-credit-card"></i><i class="store-info-icon bi-phone-vibrate"></i></li>
+                        <li><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115663.1046655315!2d121.46541036210228!3d25.051985869847922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x346e047cec3876ab%3A0x3aa1034680ae9388!2zMTA15Y-w5YyX5biC5p2-5bGx5Y2A5Y2X5Lqs5p2x6Lev5LiJ5q61MzM36Jmf!3m2!1d25.0520086!2d121.5478119!5e0!3m2!1szh-TW!2stw!4v1702450392799!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <!-- <h4 class="region south">南部</h4>          -->
+                <div class="store">                
+                    <h5>台南|新天地旗艦店</h5>
+                    <ul>
+                        <li><i class="store-info-icon bi-clock"></i><span>9:00~22:00</span></li>
+                        <li><i class="store-info-icon bi-shop"></i><span>台南市中西區西門路一段658號15F</span></li>
+                        <li><i class="store-info-icon bi-telephone"></i><span>06-222-2222</span></li>
+                        <li><div class="line"></div></li>
+                        <li><i class="store-info-icon bi-credit-card"></i><i class="bi-phone-vibrate"></i></li>
+                        <li><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117536.09832246165!2d120.11584859400426!3d22.986914497456034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x346e767bf4f993a7%3A0x39dcfbaa57d911d6!2zNzAw5Y-w5Y2X5biC5Lit6KW_5Y2A6KW_6ZaA6Lev5LiA5q61NjU46Jmf!3m2!1d22.986935799999998!2d120.19825019999999!5e0!3m2!1szh-TW!2stw!4v1702450639377!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                    </ul>
+                </div>
+            </section>
+            
+        </div>         
+        
+        
+        
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <div class="container foot">
+          <div class="row">
+            <div class="logo_foot col-lg-3 col-md-6">
+              <a href="#">
+                <img src="./images/logo.png" alt="">            
+                <a class="code" href="#">
+                  <img src="./images/CODE_A.png" alt="">
+                  <img src="./images/CODE_G.png" alt="">
+                  <h6 class="download">下載APP</h6>
+                </a>
+              </a>
+            </div>
+            <div class="info col-lg-3 col-md-6">
+              <dl>
+                <dt><a href="#">關於我們</a></dt>
+                <dd><a href="#">台南市成功區太平路123號</a></dd>
+                <dd><a href="#">06-123-4567</a></dd>
+                <dd><a href="#">CRM@aymail.com</a></dd>
+            </dl>
+            </div>
+            <div class="info col-lg-3 col-md-6">
+              <dl>
+                <dt><a href="#">投資人專區</a></dt>
+                <dd><a href="#">財務資訊</a></dd>
+                <dd><a href="#">股東專欄</a></dd>
+                <dd><a href="#">股東大會</a></dd>               
+              </dl>        
+            </div>     
+            <div class="info col-lg-3 col-md-6">
+              <dl>
+                <dt><a href="#">企業永續</a></dt>
+                <dd><a href="#">社會關懷</a></dd>
+                <dd><a href="#">永續經營</a></dd>            
+                <dd><a href="#">報告書</a></dd>
+                <dd><a href="#">員工慈善活動</a></dd>            
+              </dl>
+            </div>        
+          </div>       
+          
+        </div>
+      </footer>
+
+
+    <script src="./bootstrape/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="./js/branch.js"></script>
+    <script>
+        
+        
+    </script>
+</body>
+</html>
