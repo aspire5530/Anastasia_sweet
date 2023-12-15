@@ -94,7 +94,7 @@
   padding-top: 2px;
 }
 .header .section .member .bi-person-fill {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 65px;
   color: #636060;
 }
@@ -103,13 +103,13 @@
   position: relative;
 }
 .header .section .cart .bi-cart4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 65px;
   color: #636060;
 }
 .header .section .cart .num {
   position: absolute;
-  top: 18%;
+  top: 22%;
   width: 0.8rem;
   height: 0.8rem;
   background-color: #ff6600;
