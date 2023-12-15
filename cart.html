@@ -89,8 +89,8 @@
                         <th><input v-model="isAll" type="checkbox"></th>                
                         <th></th>
                         <th>商品</th>                        
-                        <th>單價</th>
-                        <th>數量</th>
+                        <!-- <th>單價</th> -->
+                        <!-- <th>數量</th> -->
                         <th class="sub-ttl-tag">小計</th>
                         <th></th>
                     </tr>                    
@@ -99,13 +99,23 @@
                     <tr v-for="(item, index) in prodList" :key="item.id" :class="{ active: item.isChecked }">
                         <td><input class="choose" type="checkbox" v-model="item.isChecked"></td>
                         <td class="pic"><img class="prod-pic" :src="item.pic" alt=""></td>
-                        <td>{{item.product}}</td>
-                        <td>{{item.price}}元</td>
                         <td>
+                          <ul>
+                            <li>{{item.product}}</li>
+                            <li class="price">{{item.price}}元</li>
+                            <li class="amount">
+                              <button :disabled="item.num <= 1" @click="sub(item.id)"><i class="bi-dash-square-fill"></i></button>
+                              <span>{{item.num}}</span>
+                              <i @click="add(item.id)" class="bi-plus-square-fill"></i>
+                            </li>
+                          </ul>
+                        </td>
+                        <!-- <td>{{item.price}}元</td> -->
+                        <!-- <td>
                             <button :disabled="item.num <= 1" @click="sub(item.id)"><i class="bi-dash-square-fill"></i></button>
                             <span>{{item.num}}</span>
                             <i @click="add(item.id)" class="bi-plus-square-fill"></i>
-                        </td>
+                        </td> -->
                         <td class="sub-ttl">{{item.price * item.num}}元</td>
                         <td><i @click='del(item.id)' class="bi-trash3"></i></td>
                     </tr>

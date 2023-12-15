@@ -87,11 +87,11 @@
             </label>            
             <input class="psw" v-model="password" type="password" @change="verifyPwd" autocomplete placeholder="請輸入您的密碼">         
             <a href="#" class="forget">忘記密碼</a>
-            <a href="#" @click="reset" class="forget">全部清空</a><br>
-            <button type="submit" class="btn">立即登入</button>                    
-            <a href="#" @click="test">獲取試用帳號與密碼</a>
+            <a href="#" @click="reset" class="clear">全部清空</a><br>
+            <button type="submit" class="login-btn">立即登入</button>                    
+            <a class="get" href="#" @click="test">獲取試用帳號與密碼</a>
             <p class="line"></p>
-            <a href="./register.html" class="nbtn">註冊成為新會員<i class="bi-chevron-double-right"></i></a>   
+            <a href="./register.html" class="nbtn">註冊成為新會員</a>   
             
           </form>
         </div>
