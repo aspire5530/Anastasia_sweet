@@ -1,0 +1,219 @@
+// out: ../css/
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper {
+    margin: 0 auto;            
+    width: 1000px;
+}
+
+/* header */
+.header {
+    height: 56px;
+    .wrapper {
+        .logo {
+            display: block;
+            height: 56px;
+            width: 89px;
+            background-image: url(../images/logo-ss.png);
+            
+        }
+    }
+}
+
+
+
+// 頂部
+
+// @media (max-width: 768px) {
+//     .bg-body-tertiary {
+//         height: 70px;
+//     }        
+    
+// }
+
+// @media (min-width: 768px) {
+//     // .bg-body-tertiary {
+//     //     height: 60px;
+//     // } 
+//     .iconfont-list, .bi-list {
+//         display: none;
+
+//     }       
+// }
+
+// @media (min-width: 992px) {
+//     .bg-body-tertiary {
+//         height: 80px;
+//     }            
+// }
+
+// .header {
+//     .wrapper {
+//         padding: 0;
+//         margin: 0;
+//     }
+// }
+
+
+// .bg-body-tertiary {
+//     padding-top: 0;
+//     height: 56px;    
+//     background-color: gold;
+//     color: #000;
+//     .navbar-collapse {
+//         flex-grow: 0;
+//         .navbar-nav a {
+//             color: white;
+//         }
+//     }
+//     .container {
+//         padding: 0;
+//         margin-top: 0;
+//         img {
+//             height: 56px; /*圖大*/
+//         }
+
+//         .btn-primary {
+//             background-color: transparent;
+//             border: 0;
+//         }
+        
+//         .offcanvas {
+//             .nav-item {
+//                 border-bottom: 1px solid #f0f0f0;
+//                 color: black;
+//             }
+//         }
+        
+//     }
+// }
+
+
+
+
+// 輪播圖
+.carousel {
+    //響應式媒體查詢
+    @media (max-width: 768px) {
+        .carousel-item {
+            margin-top: 70px;
+            height: 250px;
+        }        
+    }
+
+    @media (min-width: 768px) {
+        .carousel-item {
+            margin-top: 30px;
+            height: 400px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .carousel-item {
+            margin-top: 50px;
+            height: 500px;            
+        }
+    }
+
+    .carousel-item { 
+        // height: 500px;      
+        background-size: cover;
+        background-position: center 0;
+    }
+
+    .carousel-item:nth-child(1) {
+        background-image: url(../images/about-bg-1.jpg);
+    }
+
+    .carousel-item:nth-child(2) {
+        background-image: url(../images/about-bg2.jpg);
+    }
+
+    .carousel-item:nth-child(3) {
+        background-image: url(../images/bg-header.jpg);
+    }
+
+    .carousel-item:nth-child(4) {
+        background-image: url(../images/bg-section01.jpg);
+    }
+}
+
+// 蓋版
+
+.coverpic {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);        
+    background-size: cover;
+    box-shadow: 10px 10px 15px grey;
+    z-index: 10000;
+}
+@media (min-width: 768px) {        
+    .coverpic {          
+        width: 700px;
+        height: 350px;
+        background-image: url(../images/cover.jpg);           
+    }
+}
+@media (max-width: 768px) {
+    .coverpic {
+        width: 360px;
+        height: 600px;
+        background-image: url(../images/stars.png);
+        
+    }
+}
+.cover {
+    position: relative;
+    
+
+    .btn-close {
+        position: absolute;
+        right: 5px;
+        top: 5px; 
+    }
+
+}
+
+// 盒子區
+.project {
+    margin-top: 60px;
+    text-align: center;
+    .row {
+        div {
+            margin-top: 10px;
+            height: 200px;            
+            a {
+                display: block;
+                height: 200px;
+                border-radius: 4px;                
+            }
+
+            &:nth-child(1) a {
+                background-color: rgb(20, 179, 204);
+            }
+
+            &:nth-child(2) a {
+                background-color: darkcyan;
+            }
+
+            &:nth-child(3) a {
+                background-color:sandybrown;
+            }
+
+            &:nth-child(4) a {
+                background-color: indigo;
+            }
+
+        }        
+    }
+}

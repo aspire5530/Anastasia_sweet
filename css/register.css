@@ -1,0 +1,321 @@
+* {
+  margin: 0 ;
+  padding: 0 ;
+  color: #333;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none !important;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  box-sizing: border-box;
+}
+/* header */
+.header {
+  height: 65px;
+  background-color: #fff;
+}
+.header .section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.header .section .list-s {
+  height: 65px;
+  width: 65px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2rem;
+  background-color: #fff;
+  border: 0;
+}
+.header .section .bi-list {
+  color: #636060;
+}
+.header .section .logo {
+  height: 65px;
+  width: 220px;
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  background-position: center center;
+}
+.header .section nav {
+  padding-top: 20px;
+}
+.header .section nav ul {
+  display: flex;
+}
+.header .section nav ul li .main-nav {
+  display: block;
+  margin: 0 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #636060;
+  transition: all 0.15s;
+  text-align: center;
+}
+.header .section nav ul li .main-nav:hover {
+  color: #000;
+  font-size: 19px;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px rgba(188, 188, 188, 0.5);
+  border-bottom: 2px solid plum;
+}
+.header .section .search {
+  padding-top: 17px;
+  width: 300px;
+  height: 35px;
+}
+.header .section .search .searchbar {
+  padding-left: 9px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #ececec;
+}
+.header .section .search .searchbar::placeholder {
+  font-size: 16px;
+}
+.header .section .search .searchbtn .bi-search-heart-fill {
+  color: rgba(82, 80, 80, 0.5);
+}
+.header .section .topbtn {
+  padding-top: 7px;
+  display: flex;
+  width: 100px;
+}
+.header .section .topbtn .member {
+  padding-top: 5px;
+}
+.header .section .topbtn .member .bi-person-fill {
+  color: #636060;
+  font-size: 29px;
+}
+.header .section .topbtn .cart {
+  position: relative;
+  padding: 6px 0px 0px 15px;
+}
+.header .section .topbtn .cart .bi-cart4 {
+  color: #636060;
+  font-size: 1.2rem;
+}
+.header .section .topbtn .cart .num {
+  position: absolute;
+  left: 33px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #ff6600;
+  border-radius: 10px;
+  font-size: 5px;
+  font-weight: 700;
+  color: #ececec;
+  text-decoration: none;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  nav,
+  .search {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .bi-list {
+    display: none;
+  }
+}
+.offcanvas .search {
+  margin-right: 20px;
+  width: 300px;
+  height: 45px;
+}
+.offcanvas .search .searchbar {
+  padding-left: 15px;
+  border-radius: 40px;
+  border: 0;
+  width: 250px;
+  height: 45px;
+  background-color: #ececec;
+}
+.offcanvas .search .searchbar::placeholder {
+  font-size: 20px;
+}
+.offcanvas .search .searchbtn .bi-search-heart-fill {
+  font-size: 30px;
+  color: rgba(82, 80, 80, 0.5);
+}
+.offcanvas .offcanvas-body li {
+  margin-right: 50px;
+  border-bottom: 1px solid plum;
+}
+.offcanvas .offcanvas-body li a {
+  color: #636060;
+  text-decoration: none;
+  line-height: 55px;
+}
+body {
+  background-image: url(../images/bg_register.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+}
+.register {
+  background-color: #ffffff7e;
+  margin-top: 65px;
+  padding: 50px 6%;
+}
+.register .row {
+  margin: 8px 0;
+}
+.register .row h3 {
+  margin: 8px auto;
+  font-weight: 700;
+  text-align: center;
+}
+.register .row h4 {
+  margin: 15px auto;
+  text-align: center;
+}
+.register .row h5 {
+  margin-bottom: 0;
+  line-height: 40px;
+}
+.register .row p {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0 0.5rem;
+  color: #530202;
+}
+.register .row input {
+  height: 40px;
+  border: 0;
+  background-color: #f5e4e4;
+  border-radius: 20px;
+  padding-left: 0.2rem;
+}
+.register .row input::placeholder {
+  padding: 0 0.5rem;
+  line-height: 50px;
+}
+.register .row .bdinfo {
+  margin: 0;
+  height: 40px;
+  border: 0;
+  background-color: #f5e4e4;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.register .row .bdinfo #birth {
+  margin: 0;
+  outline: none;
+}
+.register .row .msg .sent {
+  margin-bottom: 0.2rem;
+  line-height: 40px;
+  color: #ffffff;
+  width: 160px;
+  background-color: #5a2c55;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+.register .row .agree {
+  margin: 3% auto;
+}
+.register .row .agree .agreement {
+  display: block;
+  padding: 5px;
+  height: 150px;
+  margin: 0 auto;
+  font-size: 18px;
+  overflow: auto;
+  background-color: #fff0f0a4;
+  border-radius: 10px;
+}
+.register .row .agree .check {
+  margin: 0 auto;
+}
+.register .row .agree .check .checkbox {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+.register .row .agree .check span {
+  color: #888888;
+  font-size: 18px;
+  line-height: 18px;
+}
+.register .row .regis-btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 2px auto;
+  background-color: #f5e4e4;
+  border: 1px solid #7d1e52;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 30px;
+  color: #bb2e7c;
+  line-height: 50px;
+  font-size: large;
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+}
+.register .row .regis-btn:hover {
+  box-shadow: 3px 3px 12px #fff3f3;
+}
+.foot {
+  margin: 0 auto;
+  padding: 15px 15px 0 15px;
+  background: #d4c29b;
+  text-align: center;
+}
+.foot .row {
+  justify-content: space-between;
+}
+.foot .row .logo_foot {
+  padding: 0;
+  margin-bottom: 5px;
+  height: 220px;
+  text-align: center;
+}
+.foot .row .logo_foot img {
+  max-width: 180px;
+  border-radius: 15px;
+}
+.foot .row .logo_foot .code {
+  display: block;
+  margin: 2px auto;
+  width: 230px;
+}
+.foot .row .logo_foot .code img {
+  max-width: 72px;
+}
+.foot .row .logo_foot h6 {
+  margin: 15px auto;
+  padding: 5px;
+  width: 100px;
+  border-radius: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #636060;
+  background-color: #e2d5b7;
+}
+.foot .row .info {
+  padding: 12px 10px 5px 10px;
+  height: 180px;
+}
+.foot .row .info dt a {
+  font-size: 20px;
+  font-weight: 700;
+}
+.foot .row .info dt,
+.foot .row .info dd {
+  padding-left: 35px;
+  margin-bottom: 2px;
+}
+.foot .row .info a {
+  color: #585347;
+  font-size: 14px;
+}
