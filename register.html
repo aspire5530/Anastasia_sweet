@@ -11,74 +11,69 @@
 </head>
 <body>
         <!-- header -->
-    <div class="header fixed-top">
-        <div class="section container">
-          <!---行動版選單開關 -->
-          <button class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi-list"></i></button>
-          <!-- <a class="list-s" href="#"><i class="bi-list"></i></a> -->
-          <!-- logo -->
-          <a class="logobtn" href="./index.html"><div class="logo"></div></a>
-          <!-- nav: 按鈕四顆 -->
-          <nav>
-            <ul>
-              <li><a class="main-nav" href="./index.html">首頁</a></li>
-              <li><a class="main-nav" href="./products.html">商品</a></li>
-              <li><a class="main-nav" href="#">分店</a></li>            
-            </ul>
-          </nav>
-          <!-- 搜尋列 -->
-          <div class="search">
-            <input type="text" class="searchbar" placeholder="快搜搜您喜歡的東西">
-            <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
-          </div>
-          <a href="#"></a>
-          <div class="topbtn">
-            <!--會員 -->
-            <div class="member">
-              <a href="#">
-                <i class="bi-person-fill"></i>
-                <!-- <span>請登入</span> -->
-              </a>
-            </div>
+        <div class="header fixed-top">
+          <div class="section container">
+            <!---行動版選單開關 -->
+            <a class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi-list"></i></a>
+            <!-- logo -->
+            <a class="logobtn" href="./index.html"><div class="logo"></div></a>
+            <!-- nav: 按鈕四顆 -->
+            <nav class="top-nav">
+              <ul>
+                <li><a class="main-nav active" href="./index.html">首頁</a></li>
+                <li><a class="main-nav" href="./products.html">商品</a></li>
+                <li><a class="main-nav" href="./branch.html">分店</a></li>            
+              </ul>
+            </nav>        
             <!-- 購物車 -->
             <div class="cart">
-              <a href="#">
+              <a href="./cart.html">
                 <i class="bi-cart4"></i>
                 <div class="num">0</div>
               </a>
             </div>
-        </div>
-        </div>
-    </div>  
+            <!--會員 -->
+            <div class="member">
+              <a href="./login.html">
+                <i class="bi-person-fill"></i>
+                <!-- <span>請登入</span> -->
+              </a>
+            </div>        
+            <!-- 搜尋列 -->
+            <div class="search">
+              <input type="text" class="searchbar" placeholder="快搜搜您喜歡的東西">
+              <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>  
       
     <!-- 行動版選單 -->
     <div class="s-list">
-    <!-- 按鈕 -->
-    <!-- <button class="btn btn-primary list-s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button> -->
-    <!-- 選單 -->
-    <!-- 搜尋列 -->
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-            <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5> -->
-                <div class="search">
-                <input type="text" class="searchbar" placeholder="請輸入關鍵字">
-                <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
-                </div>
-            
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <!-- 選項 -->
-            <div class="offcanvas-body">
-            <nav>
-                <ul>
-                <li><a href="./index.html">首頁</a></li>
-                <li><a class="active" href="#">商品</a></li>
-                <li><a href="#">分店</a></li>            
-                </ul>
-            </nav>          
-            </div>
+      <!-- 按鈕 -->
+     
+      <!-- 選單 -->      
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <!-- 搜尋列 -->
+          <div class="m-search">
+            <input type="text" id="m-searchbar" placeholder="快搜搜吧！">
+            <a class="searchbtn" href="#"><i class="bi-search-heart-fill"></i></a>
+          </div>
+          <a href="#"></a>
+          <a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>          
+        </div>              
+        <div class="offcanvas-body">
+          <nav>
+            <ul>
+              <li><a href="./index.html">首頁</a></li>
+              <li><a href="./products.html">商品</a></li>
+              <li><a href="./branch.html">分店</a></li>           
+            </ul>
+          </nav>          
         </div>
-    </div>
+      </div>
+    </div>   
 
     <!-- 註冊 -->    
     <section class="container">
@@ -203,46 +198,47 @@
     </section>
 
     <!-- footer -->
-    <footer class="foot">
-        <footer class="container">
+    <footer>
+      <div class="container foot">
         <div class="row">
-            <div class="logo_foot col-lg-3 col-md-6">
+          <div class="logo_foot col-lg-3 col-md-6">
             <a href="#">
-                <img src="./images/logo.png" alt="">            
-                <a class="code" href="#">
+              <img src="./images/logo.png" alt="">            
+              <a class="code" href="#">
                 <img src="./images/CODE_A.png" alt="">
                 <img src="./images/CODE_G.png" alt="">
-                <h6>下載APP</h6>
-                </a>
+                <h6 class="download">下載APP</h6>
+              </a>
             </a>
-            </div>
-            <div class="info col-lg-3 col-md-6">
+          </div>
+          <div class="info col-lg-3 col-md-6">
             <dl>
-                <dt><a href="#">關於我們</a></dt>
-                <dd><a href="#">台南市成功區太平路123號</a></dd>
-                <dd><a href="#">06-123-4567</a></dd>
-                <dd><a href="#">CRM@aymail.com</a></dd>
-            </dl>
-            </div>
-            <div class="info col-lg-3 col-md-6">
+              <dt><a href="#">關於我們</a></dt>
+              <dd><a href="#">台南市成功區太平路123號</a></dd>
+              <dd><a href="#">06-123-4567</a></dd>
+              <dd><a href="#">CRM@aymail.com</a></dd>
+          </dl>
+          </div>
+          <div class="info col-lg-3 col-md-6">
             <dl>
-                <dt><a href="#">投資人專區</a></dt>
-                <dd><a href="#">財務資訊</a></dd>
-                <dd><a href="#">股東專欄</a></dd>
-                <dd><a href="#">股東大會</a></dd>               
+              <dt><a href="#">投資人專區</a></dt>
+              <dd><a href="#">財務資訊</a></dd>
+              <dd><a href="#">股東專欄</a></dd>
+              <dd><a href="#">股東大會</a></dd>               
             </dl>        
-            </div>     
-            <div class="info col-lg-3 col-md-6">
+          </div>     
+          <div class="info col-lg-3 col-md-6">
             <dl>
-                <dt><a href="#">企業永續</a></dt>
-                <dd><a href="#">社會關懷</a></dd>
-                <dd><a href="#">永續經營</a></dd>            
-                <dd><a href="#">報告書</a></dd>
-                <dd><a href="#">員工慈善活動</a></dd>            
+              <dt><a href="#">企業永續</a></dt>
+              <dd><a href="#">社會關懷</a></dd>
+              <dd><a href="#">永續經營</a></dd>            
+              <dd><a href="#">報告書</a></dd>
+              <dd><a href="#">員工慈善活動</a></dd>            
             </dl>
-            </div>        
-        </div>
-        </footer>
+          </div>        
+        </div>       
+        
+      </div>
     </footer>
 
     <script src="./bootstrape/js/bootstrap.min.js"></script>
