@@ -99,7 +99,7 @@
                     <tr v-for="(item, index) in prodList" :key="item.id" :class="{ active: item.isChecked }">
                         <td><input class="choose" type="checkbox" v-model="item.isChecked"></td>
                         <td class="pic"><img class="prod-pic" :src="item.pic" alt=""></td>
-                        <td>
+                        <td class="info">
                           <ul>
                             <li>{{item.product}}</li>
                             <li class="price">{{item.price}}元</li>
