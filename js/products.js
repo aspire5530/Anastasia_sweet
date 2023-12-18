@@ -251,7 +251,7 @@ function render(arr) {
         const {product, pic, price} = item
         str += `
         <div class="select col-lg-3 col-md-4 col-sm-6 col-6">
-                    <a class="goods-item" href="#">
+                    <a class="goods-item" href="../cart.html">
                         <div class="pic" style="background-image: url('${pic}')"></div>
                         <div class="text">
                             <div class="prod-info">
