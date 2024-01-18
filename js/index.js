@@ -1,7 +1,7 @@
 //倒數計時
 function getCountTime() {
     const nowDate = +new Date()    
-    const deadline = +new Date('2024-01-05 23:59:59')     
+    const deadline = +new Date('2024-01-31 23:59:59')     
     const count = (deadline - nowDate) / 1000
     
     // let d = parseInt(count / 60 / 60 / 24)
